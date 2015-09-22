@@ -1,2 +1,3 @@
 # apple-core
-Apple Weatherbox Core Examples
+
+Contains some software examples for accessing the Apple weatherbox sensors. 
