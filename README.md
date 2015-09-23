@@ -23,3 +23,15 @@ sensors.cpp         |   Main functions for accessing sensors on the board
 4. Press verify to compile and verify your code
 5. Press upload when you're ready to program your device. 
 
+
+# Notes on .cpp and .h files
+
+If you're planning to modularize your code (which you should) by separating
+your logic into `.cpp` and `.h` files, remember that in addition to adding the
+needed libraries to your relevant `.cpp` and `.h` files you **NEED** to include
+it into the main `.ino` file as well.
+
+The main `.ino` file (the one with folder-name.ino) is that the Arduino IDE looks
+for when it attempts to link everything together. If the relevant headers are not included
+in the `.ino` file, you'll get an error when you try to build the project
+
