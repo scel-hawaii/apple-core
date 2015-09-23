@@ -18,9 +18,12 @@
 #include <Adafruit_BMP085.h>
 
 void setup(){
-
+    Sensors_init();
+    Serial.begin(9600);
 }
 
 void loop(){
+
+
 
 }
